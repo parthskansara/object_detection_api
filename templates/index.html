@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Vision and Language Navigation</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link src="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" src="images/fac.png"/>
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="css/owl.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+
+        <style>
+            #upbtn{
+                background-color: bisque;
+            }
+
+            input[type="file"] {
+                display: none;
+            }
+
+            input[type="submit"] {
+                display: none;
+            }
+
+            .img-up{
+                color: #FFFFFF;
+                /* font-family: Arial, Helvetica, sans-serif; */
+                font-size: 20px;
+                display: inline-block;
+                /* margin-left: 650px; */
+                padding: 15px 30px;
+                /* padding-top: 10px; */
+                cursor: pointer;
+            }
+
+            .img-up:hover{
+                color: white;
+                border: 3px solid #f5a425;
+                transition: 0.5s;
+            }
+
+            .sub{
+                margin-top: 10px;
+                /* margin-left: 700px; */
+                padding: 0px 45px;
+                font-weight: 900;
+                font-size: 30px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color:   #f5a425;
+                /* background-image: url("arrow.png"); */
+            }
+
+        </style>
+    </head>
+    <body style="margin:0; background-image: url(images/choosing-bg.jpg);">
+        <header class="main-header clearfix" role="header" style="width: 100%;">
+            <div class="logo">
+              <a href="http://127.0.0.1:8000/fyp"><em>VLN</em> System</a>
+            </div>
+            <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+            <nav id="menu" class="main-nav" role="navigation">
+              <ul class="main-menu">
+                
+                <li><a href="/workspace" class="external" >Landmark Detection</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          
+
+    <h1 style="text-align: center; font-family: Montserrat; padding-top: 150px; color: white;" class="pt-5">
+        Landmark Detection Module
+    </h1>
+    <hr style="margin-left: 100px; margin-right: 100px;">
+    <br>
+
+    <div style="text-align: center; align-items: center;">
+        <form action = "http://localhost:5000/image" method = "POST" 
+         enctype = "multipart/form-data">
+         <label class="img-up">
+            <input type = "file" name = "file" id="upbtn" />
+            Upload Test Image
+         </label>
+         <br>
+         <br>
+         <label class="sub">
+            <input type = "submit"/>
+            <strong> >> </strong>          
+         </label>         
+      </form>
+    </div>
+      
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/slick-slider.js"></script>
+    <!-- <script src="js/custom.js"></script> -->
+    <footer style="position: absolute; bottom:0px; width: 100%;">  
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p><i class="fa fa-copyright justify-content-center"></i> Copyright 2021 by Ansh, Parth Kansara & Parth Meswani 
+              
+               | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">Fulfilled for Final Year Project</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>
